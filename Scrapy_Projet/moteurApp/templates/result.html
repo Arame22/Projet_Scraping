@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats de la recherche</title>
+    <style>
+        body {
+            background-color: #CCE4CF;
+            text-size-adjust: 100%;
+        }
+
+        nav {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Inclure des liens de navigation ici -->
+        </div>
+    </nav>
+
+    <h1>Résultats de la recherche</h1>
+
+    {% if results %}
+        <ul>
+            {% for result in results %}
+                <li>
+                    <h2>{{ result.Titre }}</h2>
+                    <p>{{ result.Contenu }}</p>
+                </li>
+            {%endfor%}
+        </ul>
+    {% else %}
+        <p>Aucun résultat trouvé.</p>
+    {% endif %}
+
+    <a href="/">Retour à la page d'accueil</a>
+</body>
+</html>

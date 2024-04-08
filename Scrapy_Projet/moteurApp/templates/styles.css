@@ -1,0 +1,38 @@
+/* styles.css */
+.barre-recherche {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .barre-recherche input {
+    flex-grow: 1;
+    padding: 10px;
+  }
+  
+  .barre-recherche button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .resultats {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .resultat {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+  }*/
+  body {
+    background-color: red;
+    }
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+  
